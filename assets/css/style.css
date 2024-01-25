@@ -101,17 +101,16 @@ main {
     flex-direction: column;
 }
 
-/* Hero section */
-#hero {
-    height: 600px;
+#home-main {
+    height: 420px;
     width: 100%;
-    background: url("../images/jujutsu01.webp") no-repeat center center/cover;
+    background: url("../images/home-main.jpg") no-repeat center center/cover;
     position: relative;
 }
 
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
-    background-color: rgba(241, 109, 107, .7);
+    background-color: rgba(241, 109, 107, 0.7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -129,7 +128,7 @@ main {
 /* Reasons section */
 #reasons {
     width: 90%;
-    margin: 10px auto;
+    margin: 30px auto;
     /*border: 2px solid white;*/
     display: flex;
     justify-content: center;
@@ -160,13 +159,15 @@ main {
     border: 1px solid rgba(241, 109, 107, 0.7);
 }
 
+/*
 #about-jujutsu-box:hover {
     box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.7), 0 3px 20px 0 rgba(255, 255, 255, 0.7);
     background-color: white;
     color: rgba(241, 109, 107, .7);
     transition-delay: 0.2s;
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
 }
+*/
 
 #jujutsu p {
     padding: 0 30px;
@@ -196,30 +197,96 @@ main {
     justify-content: center;
 }
 
-/* Meetup Times section */
-#times {
-    background: url('../images/jujutsu01.webp') no-repeat center/cover;
-    /* Handles responsivity without the need for a media query */
+/* ________________________________________ season ________________________________________ */
+#season {
     display: flex;
     flex-wrap: wrap;
 }
 
-#times div {
+/*
+#season div {
     color: #fafafa;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 15px;
     text-align: center;
-    /* This will not wrap on screens of less than 400px wide.
-    Each div will expand to fill the available space on its row */
     flex-basis: 200px;
     flex-grow: 1;
-    /* Creates a grid of meetup time dives over the background image */
+    border: 2px solid white;
+}
+*/
+
+#season-0 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../images/kaisen-0.png');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
     border: 2px solid white;
 }
 
-#times h3 {
+#season-1 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../images/team-gojo.jpg');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+
+#season-2 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../images/satoro-gojo.png');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+
+#season-3 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../images/sukuna-itadori.jpg');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 25px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+
+#season span {
+    color: rgba(241, 109, 107, 0.7);
+}
+
+#season p {
+    font-weight: bold;
+}
+
+#season h3 {
     /* Override the heading colour set in general styles */
     color: #fafafa;
+    margin-bottom: 10px;
 }
 
 /* Gallery page */
@@ -231,6 +298,121 @@ main {
 #photos {
     line-height: 0;
 }
+
+
+
+
+
+/* _____________________________ CHARACTER _____________________________ */
+
+#character-main {
+    height: 420px;
+    width: 100%;
+    background: url("../images/character-main2.jpg") no-repeat center center;
+    position: relative;
+}
+
+#character {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#character-yudi-teste {
+
+    height: 200px;
+    width: auto;
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+
+}
+
+.character-con {
+    position: relative;
+}
+
+#image {
+    position: absolute;
+}
+
+#texto {
+    position: absolute;
+    font-size: 32px;
+    left: 250px;
+    top: 135px;
+}
+
+#character-gojo {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../images/team-gojo.jpg');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+
+#character-sukuna {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../images/satoro-gojo.png');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+
+#character-yuta {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../images/sukuna-itadori.jpg');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 25px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+
+#character span {
+    color: rgba(241, 109, 107, 0.7);
+}
+
+#character p {
+    font-weight: bold;
+}
+
+#character h3 {
+    /* Override the heading colour set in general styles */
+    color: #fafafa;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* _____________________________ CHARACTER _____________________________ */
+
+
+
+
 
 /* Form */
 #signup {
@@ -284,13 +466,21 @@ main {
 }
 
 /* Footer */
+
+
+footer {
+    margin-top: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
 #social-networks {
     text-align: center;
     padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    background-color: black;
 }
 
 #social-networks i {
@@ -345,7 +535,7 @@ main {
         margin-top: 79px;
     }
 
-    /* Hero */
+    /* Home Main */
     #cover-text {
         width: 300px;
         right: 50px;
