@@ -147,29 +147,36 @@ main {
 #about-jujutsu>div {
     line-height: 20px;
     margin-bottom: 20px;
-    border: 1px solid black;
-
     justify-content: center;
+
+    /*background: url('../images/jujutsu01.webp') no-repeat top center / cover;*/
 }
 
 #about-jujutsu-box {
-    background-color: white;
-    color: black;
+    /*background-color: black;*/
     padding: 20px;
     text-align: left;
     min-height: 200px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px #ffffff;
+    border: 1px solid rgba(241, 109, 107, 0.7);
+}
+
+#about-jujutsu-box:hover {
+    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.7), 0 3px 20px 0 rgba(255, 255, 255, 0.7);
+    background-color: white;
+    color: rgba(241, 109, 107, .7);
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
 }
 
 #jujutsu p {
-    padding: 0 10px;
+    padding: 0 30px;
     font-size: 20px;
+
 }
 
 #jujutsu hr {
     border-top: 1px solid #3a3a3a;
-    margin: 5px 0;
+    margin: 12px 0;
 }
 
 #circle-cover-bg {
