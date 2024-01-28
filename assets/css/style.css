@@ -309,12 +309,16 @@ main {
     height: 420px;
     width: 100%;
     background: url("../images/character-main2.jpg") no-repeat center center;
-    position: relative;
 }
 
-#character {
+.character {
+    top: 20px;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
 }
 
 .char-profile {
@@ -324,6 +328,7 @@ main {
     position: relative;
     text-align: center;
     color: white;
+    margin: 20px;
 }
 
 .char-profile>img {
@@ -341,25 +346,63 @@ main {
     transition-delay: 0.2s;
 }
 
-.char-profile>div {
+.char-profile #bio {
+    font-weight: bold;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     position: absolute;
-    top: 50%;
-    left: 250px;
+    top: 75%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid rgba(241, 109, 107, 0.7);
-    width: 150px;
+    border: 2px solid rgba(241, 109, 107, 0.7);
+    width: 200px;
+    z-index: 99999;
+}
+
+.char-profile #name {
+    font-weight: bold;
+
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    font-size: 26px;
+    width: auto;
+    z-index: 99999;
+}
+
+.char-profile #class {
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background-color: rgba(241, 109, 107, 0.7);
+    min-width: 30px;
+    z-index: 99999;
 }
 
 .char-profile p {
-    font-weight: bold;
-    color: purple;
+    text-align: left;
+    color: white;
 }
 
 .char-profile span {
-    font-weight: bold;
-    color: white;
+    color: rgb(204, 8, 204);
+}
+
+
+/*add responsives media quaries*/
+
+@media screen and (max-width:1200px) {
+    .char-profile {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:60px) {
+    .char-profile {
+        width: 90%;
+    }
 }
 
 
