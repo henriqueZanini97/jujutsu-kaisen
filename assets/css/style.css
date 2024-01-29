@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    background-color: black;
+    background-color: #181818;
     color: #ffffff;
     font-family: 'Lato', sans-serif;
 }
@@ -125,8 +125,8 @@ main {
     color: #ffffff;
 }
 
-/* Reasons section */
-#reasons {
+/* jujutsu section */
+#jujutsu-section {
     width: 90%;
     margin: 30px auto;
     /*border: 2px solid white;*/
@@ -134,21 +134,11 @@ main {
     justify-content: center;
 }
 
-/*
-#reasons h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 280%;
-    
-}
-*/
 
 #about-jujutsu>div {
     line-height: 20px;
     margin-bottom: 20px;
     justify-content: center;
-
-    /*background: url('../images/jujutsu01.webp') no-repeat top center / cover;*/
 }
 
 #about-jujutsu-box {
@@ -159,15 +149,10 @@ main {
     border: 1px solid rgba(241, 109, 107, 0.7);
 }
 
-/*
-#about-jujutsu-box:hover {
-    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.7), 0 3px 20px 0 rgba(255, 255, 255, 0.7);
-    background-color: white;
-    color: rgba(241, 109, 107, .7);
-    transition-delay: 0.2s;
-    transition-duration: 0.1s;
+#about-jujutsu-box span {
+    color: rgba(241, 109, 107);
 }
-*/
+
 
 #jujutsu p {
     padding: 0 30px;
@@ -202,18 +187,6 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-
-/*
-#season div {
-    color: #fafafa;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    text-align: center;
-    flex-basis: 200px;
-    flex-grow: 1;
-    border: 2px solid white;
-}
-*/
 
 #season-0 {
     background-image:
@@ -284,7 +257,6 @@ main {
 }
 
 #season h3 {
-    /* Override the heading colour set in general styles */
     color: #fafafa;
     margin-bottom: 10px;
 }
@@ -421,7 +393,7 @@ main {
     justify-content: center;
     margin: auto;
     top: 100px;
-    position: absolute;
+
 }
 
 #signup h2 {
@@ -492,32 +464,30 @@ input[type=submit]:hover {
 
 footer {
     margin-top: 100px;
-    height: 100px;
-    background-color: black;
+    height: 150px;
+    background-color: #3a3a3a;
     color: white;
 }
 
-#social-networks {
+.social-networks {
     text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+
 }
 
-#social-networks i {
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: #3a3a3a;
+    color: white;
 }
 
-/* Media query: large or landscape phones (576px and up) */
-@media screen and (min-width: 576px) {
-    #photos {
-        column-count: 2;
-        column-gap: 0;
-    }
+.social-networks i:hover {
+    color: rgba(241, 109, 107);
 }
+
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -563,7 +533,7 @@ footer {
         right: 50px;
     }
 
-    /* Reasons section */
+    /* jujutsu section */
     #about-jujutsu {
         /*display: flex;*/
         /*flex-direction: column;*/
@@ -575,32 +545,7 @@ footer {
         width: 90%;
     }
 
-    /* Gallery */
-    #photos {
-        column-count: 3;
-    }
 
-    /* Form */
-    #signup {
-        background-position: center;
-        position: relative;
-    }
-
-    #signup-form {
-        max-width: 400px;
-        position: absolute;
-        left: 10%;
-        top: 150px;
-    }
-
-    .text-input:hover {
-        border-color: #f16c6b;
-    }
-
-    .join-button:hover {
-        background-color: #fafafa;
-        color: #454b1b;
-    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -609,15 +554,11 @@ footer {
         border-bottom: 1px solid #3a3a3a;
     }
 
-    /* Gallery */
-    #photos {
-        column-count: 4;
-    }
 }
 
 @media screen and (min-width: 1200px) {
 
-    /* Reasons section */
+    /* jujutsu section */
     #jujutsu {
         display: flex;
         flex-direction: row;
