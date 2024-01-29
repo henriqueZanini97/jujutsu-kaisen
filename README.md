@@ -1,4 +1,4 @@
-# __Share Knowledge__
+# __Jujutsu Kaisene__
 
 Jujutsu Kaisen is a project created to know about the Jujutsu Kaisen Anime, released in Japan in March 2018. The web site is made for fans of animation with a character, a registration screen for more news and information and curiosities about the jujutsu universe.
 
