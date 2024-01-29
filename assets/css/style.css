@@ -312,11 +312,9 @@ main {
 }
 
 .character {
-    top: 20px;
+    margin-top: 100px;
     width: 100%;
     display: flex;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-flow: wrap;
 }
@@ -376,8 +374,7 @@ main {
     position: absolute;
     top: 10%;
     left: 50%;
-    background-color: rgba(241, 109, 107, 0.7);
-    min-width: 30px;
+    background-color: v min-width: 30px;
     z-index: 99999;
 }
 
@@ -394,13 +391,13 @@ main {
 /*add responsives media quaries*/
 
 @media screen and (max-width:1200px) {
-    .char-profile {
-        width: 40%;
+    .character {
+        width: 95%;
     }
 }
 
 @media screen and (max-width:60px) {
-    .char-profile {
+    .character {
         width: 90%;
     }
 }
@@ -409,59 +406,86 @@ main {
 /* _____________________________ CHARACTER _____________________________ */
 
 
+/* _____________________________ SIGN UP _____________________________ */
 
-
-
-/* Form */
 #signup {
-    background-image: url("../images/jujutsu01.webp");
-    background-size: cover;
-    background-position: 75%;
-    padding: 20px 10% 0 10%;
-    flex-grow: 1;
-}
-
-
-#signup-form {
-    color: #ffffff;
-    background-color: rgba(60, 60, 60, 0.6);
-    padding: 30px;
-}
-
-
-#signup-form>h2 {
-    color: #fafafa;
-    margin-bottom: 20px;
-}
-
-
-.text-input {
-    background: transparent;
-    color: #fafafa;
-    width: 100%;
-    height: 25px;
-    margin: 5px 0 20px 0;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
-    padding: 0 5px;
-}
-
-
-.radio-buttons {
-    width: 100%;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+        url('../images/sukuna-itadori.jpg');
+    padding: 20px;
+    max-width: 900px;
+    border: 0px solid rgba(241, 109, 107, 0.7);
+    box-shadow: 1px 1px 1px 3px rgba(241, 109, 107, 0.7);
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    top: 100px;
+    position: absolute;
 }
 
-
-.join-button {
-    margin-top: 20px;
-    border-radius: 2px;
-    padding: 15px 32px;
-    font-size: 100%;
-    background-color: #454b1b;
-    color: #fafafa;
+#signup h2 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
 }
+
+#signup h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    font-size: 30px;
+    margin: auto;
+}
+
+#signup_info {
+    margin-top: 0;
+    padding: 10px;
+    justify-content: center;
+    margin: auto;
+}
+
+#signup_info img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgba(241, 109, 107, 0.7);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    font-weight: bold;
+    color: white;
+    border: 1px solid rgba(241, 109, 107, 0.7);
+    background-color: rgba(241, 109, 107, 0.3);
+}
+
+/* _____________________________ SIGN UP _____________________________ */
+
 
 /* Footer */
 
