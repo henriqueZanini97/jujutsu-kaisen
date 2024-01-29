@@ -1,39 +1,53 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# __Share Knowledge__
 
-Welcome,
+Jujutsu Kaisen is a project created to know about the Jujutsu Kaisen Anime, released in Japan in March 2018. The web site is made for fans of animation with a character, a registration screen for more news and information and curiosities about the jujutsu universe.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+### Existing Features
 
-## Codeanywhere Reminders
+- __Navigation Bar__
+    -Navigation bar, allows the user to navigate between our three pages, Home, Character and Sign Up, responsive bar and easily allows the user to navigate through the page.
+![Navigation Bar](assets/images/nav-bar-sample.jpg)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- __Home Page__
+    -This section introduces the season and curiosities of Jujutsu, like info about episodes, duration or Publicated.
+![Home Section](assets/images/home-sample.jpg)
 
-`python3 -m http.server`
+- __Character Section__
+    -This section introduces the user to see the most famous Characters ever in Jujutsu Kaisen anime.
+![Character Section](assets/images/character-sample.jpg)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- __Footer Section__
+    *the footer includes links to the social media sites for the Share Knowledge project, which will open in a new tab.
+![Footer Section](Share/assets/images/footer-sample.jpg)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- __The Sign-Up Page__
+- The sign-up page allows the user to register and become a member of our website.
+![Sign Up Section](Share/assets/images/signup-sample.jpg)
 
-`http_server`
+### Features Left to Implement
+-   Would be nice include a page of the best battles with videos anf gifs.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Testing
+-   I tested everything after finish the project.
+-   
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Validator Testing
+- No errors were returned when passing through the official [W3C](https://validator.w3.org/) validator.
+- No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/) validator
 
-To log into the Heroku toolbelt CLI:
+# Deployment
+> The site was deployed to GitHub pages. The steps are:
+> In the GitHub repository, navigate to the Settings tab
+> From the source section drop-down menu, select the Master Branch
+> Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- The live link can be found here: [My Site](https://henriquezanini97.github.io/jujutsu-kaisen)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+## Credits:
+- __Content__ 
+    -The icons in the footer were taken from Font Awesome
+- __Media__
+    -All the background images are from this open-source website: https://pixabay.com/
