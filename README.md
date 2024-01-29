@@ -20,11 +20,11 @@ Jujutsu Kaisen is a project created to know about the Jujutsu Kaisen Anime, rele
 
 - __Footer Section__
     *the footer includes links to the social media sites for the Share Knowledge project, which will open in a new tab.
-![Footer Section](Share/assets/images/footer-sample.jpg)
+![Footer Section](assets/images/footer-sample.jpg)
 
 - __The Sign-Up Page__
 - The sign-up page allows the user to register and become a member of our website.
-![Sign Up Section](Share/assets/images/signup-sample.jpg)
+![Sign Up Section](assets/images/signup-sample.jpg)
 
 ### Features Left to Implement
 -   Would be nice include a page of the best battles with videos anf gifs.
